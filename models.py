@@ -4,7 +4,7 @@ import datetime
 
 db = SQLAlchemy()
 class Alumnos(db.Model):
-    _tablename_ = 'alumnos'
+    __tablename__ = 'alumnos'
     id=db.Column(db.Integer,primary_key=True)
     nombre=db.Column(db.String(59))
     apaterno=db.Column(db.String(59))
